@@ -1,13 +1,16 @@
 import tornado.ioloop, tornado.web
 import json
 
-data = json.load(open('mlb.json'))
+with open('mlb.json') as data_file:
+    data = json.load(data_file)
 
 class Handler(tornado.web.RequestHandler):
     def get(self):
         self.write("<h3>Simple Parsing</h3><br/><p>This is a simple parsing of a json file using Python with Tornado web server.</p>")
         for team in data['mlb_teams']:
             self.write("<b>Team:</b> " + team["name"] + " <b>City:</b> " + team['city'] + "<br/>")
+
+        data
 
 		
 application = tornado.web.Application([ (r"/", Handler) ])
