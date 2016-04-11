@@ -1,0 +1,14 @@
+{
+	"mlb_teams":[
+		{"name":"Yankees", "city":"New York"},
+		{"name":"Red Sox", "city":"Boston"},
+		{"name":"Cardinals", "city":"St. Louis"},
+		{"name":"Braves", "city":"Atlanta"},
+		{"name":"Dodgers", "city":"Los Angeles"},
+		{"name":"Orioles", "city":"Baltimore"},
+		{"name":"Cubs", "city":"Chicago"},
+		{"name":"Padres", "city":"San Diego"},
+		{"name":"Mets", "city":"New York"},
+		{"name":"Rays", "city":"Tampa Bay"}
+	]
+}
